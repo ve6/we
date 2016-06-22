@@ -265,6 +265,34 @@
 					</td>
 					<td></td>
 				</tr>
+				<tr class="success">
+					<td>/web/</td>
+					<td>web目录可写</td>
+					<td>
+						<?php if (@file_put_contents('a.txt','123')) {
+							unlink('a.txt');
+							 echo '<span class="glyphicon glyphicon-ok text-success"></td>';
+						 }else{
+							 echo '<span class="glyphicon glyphicon-remove text-warning"></td>';
+						 }
+						 ?>
+					</td>
+					<td></td>
+				</tr>
+				<tr class="success">
+					<td>/runtime/</td>
+					<td>runtime目录可写</td>
+					<td>
+						<?php if (@file_put_contents('../runtime/a.txt','123')) {
+							unlink('../runtime/a.txt');
+							 echo '<span class="glyphicon glyphicon-ok text-success"></td>';
+						 }else{
+							 echo '<span class="glyphicon glyphicon-remove text-warning"></td>';
+						 }
+						 ?>
+					</td>
+					<td></td>
+				</tr>
 			</tbody></table>
 		</div>
 		<form class="form-inline" role="form" method="post">

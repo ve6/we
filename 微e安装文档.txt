@@ -8,9 +8,13 @@
 
 目录权限监测状态为不可写，解决措施：
 1.putty连接到您的服务器ip地址(连接不到新浪云ip地址，推荐您使用阿里云服务器)
-2.找到项目根目录，给755权限
-3./runtime 777权限
-4./config 给777权限
+2.设置权限
+chmod -R 755 we 
+chmod 777 we 
+cd we
+chmod -R 777 runtime 
+chmod -R 777 config
+
 
 第三步：配置您的数据库选项
 
