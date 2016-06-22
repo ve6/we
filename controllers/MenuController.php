@@ -25,7 +25,12 @@ class MenuController extends Controller{
 	 * 2016.6.17	
 	 */
 	public function actionIndex(){
-        return  $this->render("show");
+		
+	   $session = \Yii::$app->session;
+       $session->open();
+       $id=isset($session["id"])?$session["id"]:null;
+	   
+        return  $this->render("show",array('pub_id'=>$id));
 	}
 	
 	/*

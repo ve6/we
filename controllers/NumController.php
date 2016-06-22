@@ -6,6 +6,7 @@ use Yii;
 use yii\web\Controller;
 use app\models\PublicNumber;
 use app\models\Access;
+use app\models\Menu;
 use yii\data\Pagination;
 
 class NumController extends Controller{
@@ -55,6 +56,7 @@ class NumController extends Controller{
 		$id=$request->get('id');
 		$query = PublicNumber::deleteAll('pub_id='.$id);
 		$querys = Access::deleteAll('pub_id='.$id);
+		$queryss = Menu::deleteAll('pub_id='.$id);
 		$this->redirect('index.php?r=num/show');
     }
     //切换
@@ -93,6 +95,11 @@ class NumController extends Controller{
 				);
 				$access->attributes=$arr;
 				if($access->save()>0){
+					$menus=$this->getMenu($pub->pub_id,$pub->pub_appid,$pub->pub_appsecret);
+					$menu=new Menu();
+					$menu->pub_id=$pub->pub_id;
+					$menu->m_name=$menus;
+					$menu->save();
 					$this->redirect('index.php?r=num/edit&id='.$pub->pub_id);
 				}else{
 					echo 01;
@@ -130,6 +137,30 @@ class NumController extends Controller{
 		$json=file_get_contents($url);
 		$arr=json_decode($json,true);
 		return isset($arr['access_token'])?$arr['access_token']:null;
+	}
+	
+	private function AccessToken($id,$appid,$appsecret)
+	{
+		$access = new Access();
+		$arr=$access->find()->where(['pub_id' => $id])->one();
+		if(time()-$arr['acc_addtime']>7180){
+			$access_token=$this->getAccessToken($appid,$appsecret);
+			$access->acc_token = $access_token;
+			$access->save();  // 等同于 $customer->update();
+		}else{
+			$access_token=$arr['acc_token'];
+		}
+		return $access_token;
+		
+	}
+	/* 
+	*@return:公众号的自定义菜单
+	*/
+	private function getMenu($id,$appid,$appsecret)
+	{
+		$url="https://api.weixin.qq.com/cgi-bin/menu/get?access_token=".$this->AccessToken($id,$appid,$appsecret);
+		return file_get_contents($url);
+		
 	}
 	/* 
 	*@param1:返回随机字符串的长度
