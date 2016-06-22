@@ -2,8 +2,12 @@
 /**
   * wechat php test
   */
+$db=include 'config/db.php';
+define("DSN", $db->dsn);
+define("username", $db->username);
+define("password", $db->password);
 $code=$_GET['code'];
-$pdo=new PDO('mysql:host=w.rdc.sae.sina.com.cn;port=3307;dbname=app_wqing7','m042k01lyl','4xikj4103yk1z3w0kyxxx2lxz4wj5lm4i2h1421w');
+$pdo=new PDO(DSN,username,password);
 $rs=$pdo->query("select `pub_id`,`pub_appid`,`pub_token`,`pub_appsecret` from public_number where pub_code='$code'");
 $result_arr = $rs->fetchAll(PDO::FETCH_ASSOC);
 $arr=$result_arr[0];
@@ -24,7 +28,7 @@ class wechatCallbackapiTest
         if($this->checkSignature()){
             echo $echoStr;
 			// print_r($this->getMediaId());die;
-			echo $this->createmenu();
+			//echo $this->createmenu();
             $this->responseMsg();
 			
             exit;
@@ -160,7 +164,7 @@ class wechatCallbackapiTest
 	}
 	
 	private function pdo(){
-		return new PDO('mysql:host=w.rdc.sae.sina.com.cn;port=3307;dbname=app_wqing7','m042k01lyl','4xikj4103yk1z3w0kyxxx2lxz4wj5lm4i2h1421w',array(PDO::MYSQL_ATTR_INIT_COMMAND=>'set names utf8'));
+		return new PDO(DSN,username,password);
 	}
             
     private function checkSignature()
