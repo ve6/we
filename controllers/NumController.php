@@ -47,7 +47,8 @@ class NumController extends Controller{
         $request=Yii::$app->request;
 		$id=$request->get('id');
 		$query = PublicNumber::find()->where(['pub_id'=>$id])->one();
-        return $this->render('insert',['model'=>$query]);
+		$url=$request->hostinfo.$request->baseUrl;
+        return $this->render('insert',['model'=>$query,'url'=>$url]);
     }
 	public function actionDelete(){
         $request=Yii::$app->request;

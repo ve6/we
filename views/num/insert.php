@@ -18,7 +18,7 @@
 				<div class="row form-group">
                     <div class="col-lg-6 col-md-6 form-group">
                         <label for="inputNewPassword">接口路径</label>
-                        <input type="text" class="form-control" id="inputNewPassword" value='http://1.wqing7.applinzi.com/we/ve.php?code=<?= $model['pub_code'] ?>' disabled='true'>
+                        <input type="text" class="form-control" id="inputNewPassword" value='<?=$url?>/we/ve.php?code=<?= $model['pub_code'] ?>' disabled='true'>
 						<input type='hidden' value='<?= $model['pub_id'] ?>' name='pub_id'/>
                     </div>
 
