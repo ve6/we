@@ -5254,3 +5254,749 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1466549990.8
     'REQUEST_TIME' => 1466549990
 ]
+2016-06-22 10:10:47 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: name' in E:\wenqiang\9.YII\wqing7\1\we\views\layouts\nav.php:63
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\views\layouts\nav.php(63): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\\wenqiang\\9.Y...', 63, Array)
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\View.php(325): require('E:\\wenqiang\\9.Y...')
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\wenqiang\\9.Y...', Array)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('E:\\wenqiang\\9.Y...', Array, Object(app\controllers\MenuController))
+#4 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<!DOCTYPE html>...')
+#5 E:\wenqiang\9.YII\wqing7\1\we\controllers\MenuController.php(28): yii\base\Controller->render('show')
+#6 [internal function]: app\controllers\MenuController->actionIndex()
+#7 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('menu/index', Array)
+#11 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\wenqiang\9.YII\wqing7\1\we\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2016-06-22 10:10:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'ECS[visit_times]=19'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '63436'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466561447.861
+    'REQUEST_TIME' => 1466561447
+]
+2016-06-22 10:10:47 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#6 {main}
+2016-06-22 10:10:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'ECS[visit_times]=19'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '63436'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466561447.861
+    'REQUEST_TIME' => 1466561447
+]
+2016-06-22 10:12:23 [127.0.0.1][-][mi2cigvqh864127k0lr6rgi5t5][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\wenqiang\9.YII\wqing7\1\we\controllers\ReplyController.php(55): yii\db\Command->queryAll()
+#3 [internal function]: app\controllers\ReplyController->actionList()
+#4 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#5 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\wenqiang\9.YII\wqing7\1\we\web\index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+The SQL being executed was: select * from info_reply where pub_id=' in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'select * from i...')
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\wenqiang\9.YII\wqing7\1\we\controllers\ReplyController.php(55): yii\db\Command->queryAll()
+#3 [internal function]: app\controllers\ReplyController->actionList()
+#4 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#5 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\wenqiang\9.YII\wqing7\1\we\web\index.php(12): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+)
+
+2016-06-22 10:12:23 [127.0.0.1][-][mi2cigvqh864127k0lr6rgi5t5][info][application] $_GET = [
+    'r' => 'reply/list'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '63631'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reply%2Flist'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=reply%2Flist'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466561543.716
+    'REQUEST_TIME' => 1466561543
+]
+2016-06-22 10:22:43 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('menu/index', Array)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\wenqiang\9.YII\wqing7\1\we\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2016-06-22 10:22:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = [
+    'do' => 'remove'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+    'PHPSESSID' => 'mi2cigvqh864127k0lr6rgi5t5'
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19; PHPSESSID=mi2cigvqh864127k0lr6rgi5t5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '9'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '64325'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466562163.474
+    'REQUEST_TIME' => 1466562163
+]
+2016-06-22 10:22:43 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-06-22 10:22:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = [
+    'do' => 'remove'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+    'PHPSESSID' => 'mi2cigvqh864127k0lr6rgi5t5'
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19; PHPSESSID=mi2cigvqh864127k0lr6rgi5t5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '9'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '64325'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466562163.474
+    'REQUEST_TIME' => 1466562163
+]
+2016-06-22 10:22:53 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('menu/index', Array)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\wenqiang\9.YII\wqing7\1\we\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2016-06-22 10:22:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = [
+    'do' => '[{\"name\": \"推荐歌曲\",\"type\": \"click\",\"key\": \"V1001_TODAY_MUSIC\"},{\"name\": \"菜单\",\"sub_button\": [{\"name\": \"搜索\",\"type\": \"view\",\"url\": \"https://www.baidu.com/\"},{\"name\": \"视频\",\"type\": \"view\",\"url\": \"http://v.qq.com/\"},{\"name\": \"赞一下我们\",\"type\": \"click\",\"key\": \"V1001_GOOD\"}]}]'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+    'PHPSESSID' => 'mi2cigvqh864127k0lr6rgi5t5'
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19; PHPSESSID=mi2cigvqh864127k0lr6rgi5t5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '591'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '64337'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466562173.561
+    'REQUEST_TIME' => 1466562173
+]
+2016-06-22 10:22:53 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-06-22 10:22:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = [
+    'do' => '[{\"name\": \"推荐歌曲\",\"type\": \"click\",\"key\": \"V1001_TODAY_MUSIC\"},{\"name\": \"菜单\",\"sub_button\": [{\"name\": \"搜索\",\"type\": \"view\",\"url\": \"https://www.baidu.com/\"},{\"name\": \"视频\",\"type\": \"view\",\"url\": \"http://v.qq.com/\"},{\"name\": \"赞一下我们\",\"type\": \"click\",\"key\": \"V1001_GOOD\"}]}]'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+    'PHPSESSID' => 'mi2cigvqh864127k0lr6rgi5t5'
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19; PHPSESSID=mi2cigvqh864127k0lr6rgi5t5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '591'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '64337'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466562173.561
+    'REQUEST_TIME' => 1466562173
+]
+2016-06-22 10:24:18 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('menu/index', Array)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\wenqiang\9.YII\wqing7\1\we\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2016-06-22 10:24:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = [
+    'do' => 'refresh'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+    'PHPSESSID' => 'mi2cigvqh864127k0lr6rgi5t5'
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19; PHPSESSID=mi2cigvqh864127k0lr6rgi5t5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '10'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '64414'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466562258.371
+    'REQUEST_TIME' => 1466562258
+]
+2016-06-22 10:24:18 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-06-22 10:24:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = [
+    'do' => 'refresh'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+    'PHPSESSID' => 'mi2cigvqh864127k0lr6rgi5t5'
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19; PHPSESSID=mi2cigvqh864127k0lr6rgi5t5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '10'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '64414'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466562258.371
+    'REQUEST_TIME' => 1466562258
+]
+2016-06-22 10:36:45 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('menu/index', Array)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\wenqiang\9.YII\wqing7\1\we\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2016-06-22 10:36:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = [
+    'do' => '[{\"name\": \"推荐歌曲\",\"type\": \"click\",\"key\": \"V1001_TODAY_MUSIC\"},{\"name\": \"菜单\",\"sub_button\": [{\"name\": \"搜索\",\"type\": \"view\",\"url\": \"https://www.baidu.com/\"},{\"name\": \"视频\",\"type\": \"view\",\"url\": \"http://v.qq.com/\"},{\"name\": \"赞一下我们\",\"type\": \"click\",\"key\": \"V1001_GOOD\"}]}]'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+    'PHPSESSID' => 'mi2cigvqh864127k0lr6rgi5t5'
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu/index'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19; PHPSESSID=mi2cigvqh864127k0lr6rgi5t5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '591'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '65237'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=menu/index'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu/index'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466563005.304
+    'REQUEST_TIME' => 1466563005
+]
+2016-06-22 10:36:45 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\wenqiang\9.YII\wqing7\1\we\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-06-22 10:36:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = [
+    'do' => '[{\"name\": \"推荐歌曲\",\"type\": \"click\",\"key\": \"V1001_TODAY_MUSIC\"},{\"name\": \"菜单\",\"sub_button\": [{\"name\": \"搜索\",\"type\": \"view\",\"url\": \"https://www.baidu.com/\"},{\"name\": \"视频\",\"type\": \"view\",\"url\": \"http://v.qq.com/\"},{\"name\": \"赞一下我们\",\"type\": \"click\",\"key\": \"V1001_GOOD\"}]}]'
+]
+
+$_COOKIE = [
+    'name' => 'admin'
+    'ECS' => [
+        'visit_times' => '19'
+    ]
+    'PHPSESSID' => 'mi2cigvqh864127k0lr6rgi5t5'
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/9.YII/wqing7/1/we/web/index.php'
+    'SCRIPT_URI' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php'
+    'HTTP_HOST' => 'www.wenqiang.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.wenqiang.com/9.YII/wqing7/1/we/web/index.php?r=menu/index'
+    'HTTP_COOKIE' => 'name=admin; ECS[visit_times]=19; PHPSESSID=mi2cigvqh864127k0lr6rgi5t5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '591'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.wenqiang.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/wenqiang'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/wenqiang'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/wenqiang/9.YII/wqing7/1/we/web/index.php'
+    'REMOTE_PORT' => '65237'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=menu/index'
+    'REQUEST_URI' => '/9.YII/wqing7/1/we/web/index.php?r=menu/index'
+    'SCRIPT_NAME' => '/9.YII/wqing7/1/we/web/index.php'
+    'PHP_SELF' => '/9.YII/wqing7/1/we/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466563005.304
+    'REQUEST_TIME' => 1466563005
+]

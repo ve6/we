@@ -30,6 +30,7 @@ class InstallController extends Controller{
 	public function actionCheck(){
 		$post=\Yii::$app->request->post();
 		@$link=mysql_connect($post['db_server'].':'.$post['db_port'],$post['db_username'],$post['db_password']);
+		
 		if(empty($link)){
 			echo 0;
 		}else{
@@ -41,16 +42,11 @@ class InstallController extends Controller{
 			$sql="create database ".$post['db_name'];
 			mysql_query($sql);
 			$file=file_get_contents('we.sql');
-			$arr=explode('-- ----------------------------',$file);
+			$arr=explode(';',trim($file,"\n"));
+			array_pop($arr);
 			$db_selected = mysql_select_db($post['db_name'], $link);
 			for($i=0;$i<count($arr);$i++){
-				if($i%2==0){
-					$a=explode(";",trim($arr[$i]));
-					array_pop($a);
-					foreach($a as $v){
-						mysql_query($v);
-					}
-				}
+				mysql_query($arr[$i]);
 			}
 			$str="<?php
 					return [

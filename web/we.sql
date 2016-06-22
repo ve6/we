@@ -1,8 +1,4 @@
 SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for access
--- ----------------------------
 DROP TABLE IF EXISTS `access`;
 CREATE TABLE `access` (
   `acc_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -11,10 +7,6 @@ CREATE TABLE `access` (
   `pub_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`acc_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Table structure for info_reply
--- ----------------------------
 DROP TABLE IF EXISTS `info_reply`;
 CREATE TABLE `info_reply` (
   `p_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -25,10 +17,6 @@ CREATE TABLE `info_reply` (
   PRIMARY KEY (`p_id`),
   KEY `FK_p_i` (`pub_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Table structure for menu
--- ----------------------------
 DROP TABLE IF EXISTS `menu`;
 CREATE TABLE `menu` (
   `m_id` int(11) NOT NULL,
@@ -37,10 +25,6 @@ CREATE TABLE `menu` (
   PRIMARY KEY (`m_id`),
   KEY `FK_p_m` (`pub_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Table structure for public_number
--- ----------------------------
 DROP TABLE IF EXISTS `public_number`;
 CREATE TABLE `public_number` (
   `pub_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -55,10 +39,6 @@ CREATE TABLE `public_number` (
   PRIMARY KEY (`pub_id`),
   KEY `FK_u_p` (`u_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Table structure for users
--- ----------------------------
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `u_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -67,4 +47,4 @@ CREATE TABLE `users` (
   `u_phone` int(11) DEFAULT NULL,
   `u_email` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`u_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
