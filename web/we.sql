@@ -6,7 +6,7 @@ CREATE TABLE `access` (
   `acc_addtime` int(11) DEFAULT NULL,
   `pub_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`acc_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 DROP TABLE IF EXISTS `info_reply`;
 CREATE TABLE `info_reply` (
   `p_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -19,12 +19,12 @@ CREATE TABLE `info_reply` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 DROP TABLE IF EXISTS `menu`;
 CREATE TABLE `menu` (
-  `m_id` int(11) NOT NULL,
+  `m_id` int(11) NOT NULL AUTO_INCREMENT,
   `pub_id` int(11) DEFAULT NULL,
-  `m_name` varchar(50) DEFAULT NULL,
+  `m_name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`m_id`),
   KEY `FK_p_m` (`pub_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 DROP TABLE IF EXISTS `public_number`;
 CREATE TABLE `public_number` (
   `pub_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -38,7 +38,7 @@ CREATE TABLE `public_number` (
   `pub_code` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`pub_id`),
   KEY `FK_u_p` (`u_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `u_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -47,4 +47,4 @@ CREATE TABLE `users` (
   `u_phone` int(11) DEFAULT NULL,
   `u_email` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`u_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;

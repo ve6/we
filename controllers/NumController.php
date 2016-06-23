@@ -45,10 +45,12 @@ class NumController extends Controller{
         return $this->render('insert',['model'=>[]]);
     }
 	public function actionEdit(){
+		//echo Yii::$app->homeUrl;
         $request=Yii::$app->request;
+		
 		$id=$request->get('id');
 		$query = PublicNumber::find()->where(['pub_id'=>$id])->one();
-		$url=$request->hostinfo.$request->baseUrl;
+		$url=$request->hostinfo.substr($request->baseUrl,0,strrpos($request->baseUrl,'/'));
         return $this->render('insert',['model'=>$query,'url'=>$url]);
     }
 	public function actionDelete(){
@@ -96,6 +98,8 @@ class NumController extends Controller{
 				$access->attributes=$arr;
 				if($access->save()>0){
 					$menus=$this->getMenu($pub->pub_id,$pub->pub_appid,$pub->pub_appsecret);
+                    $menu_arr=json_decode($menus);
+                    $menus=isset($menu_arr->errcode)?null:$menus;
 					$menu=new Menu();
 					$menu->pub_id=$pub->pub_id;
 					$menu->m_name=$menus;

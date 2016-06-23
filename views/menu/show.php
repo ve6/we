@@ -24,6 +24,7 @@
 <body>
 <script type="text/javascript" src="../style/menu/jquery-ui-1.10.3.min.js"></script>
 <script type="text/javascript">
+alert($)
 	$(function(){
 		
 		/*设置url地址隐藏*/
@@ -40,8 +41,7 @@
 		var html = '<tr class="hover">'+
 						'<td>'+
 							'<div>'+
-								'<input type="text" class="span4" value=""> &nbsp; &nbsp; '+
-								'<a href="javascript:;" class="icon-move" title="拖动调整此菜单位置">m</a> &nbsp; '+
+								'<input type="text" class="span4" value=""> &nbsp; &nbsp; '+								
 								'<a href="javascript:;" onclick="setMenuAction($(this).parent().parent().parent());" class="icon-edit" title="设置此菜单动作">w</a> &nbsp; '+
 								'<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单">×</a> &nbsp; '+
 								'<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign" title="添加菜单">+</a> '+
@@ -57,8 +57,7 @@
 		}
 		var html = '' +
 				'<div style="margin-top:20px;padding-left:80px;background:url(\'./resource/image/bg_repno.gif\') no-repeat -245px -545px;">'+
-					'<input type="text" class="span3" value=""> &nbsp; &nbsp; '+
-					'<a href="javascript:;" class="icon-move" title="拖动调整此菜单位置"></a> &nbsp; '+
+					'<input type="text" class="span3" value=""> &nbsp; &nbsp; '+		
 					'<a href="javascript:;" onclick="setMenuAction($(this).parent());" class="icon-edit" title="设置此菜单动作">e</a> &nbsp; '+
 					'<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单">×</a> '+
 				'</div>';
@@ -89,7 +88,8 @@
 	
 	/*保存菜单*/
 	function saveMenu() {
-		alert(11)
+		var ipt_url = $('#ipt-url').val();
+		alert(ipt_url)
 		
 	}
 	
@@ -125,24 +125,11 @@
 		<h4>菜单设计器 <small>编辑和设置微信公众号码, 必须是服务号才能编辑自定义菜单。</small></h4>
 		<table class="tb table-striped">
 			<tbody class="mlist ui-sortable">
-									<tr class="hover" data-do="forward" data-url="" data-forward="V1001_TODAY_MUSIC">
-					<td>
-						<div>
-							<input type="text" class="span4" value="推荐歌曲"> &nbsp; &nbsp;
-							<a href="javascript:;" class="icon-move" title="拖动调整此菜单位置">m</a> &nbsp;
-							<a href="javascript:;" onclick="setMenuAction($(this).parent().parent().parent());" class="icon-edit" title="设置此菜单动作">w</a> &nbsp;
-							<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单">×</a> &nbsp;
-							<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign">+</a>
-						</div>
-						<div class="smlist ui-sortable">
-													</div>
-					</td>
-				</tr>
+				<?php if($menu){ ?>
 						<tr class="hover" data-do="view" data-url="" data-forward="">
 					<td>
 						<div>
-							<input type="text" class="span4" value="菜单"> &nbsp; &nbsp;
-							<a href="javascript:;" class="icon-move" title="拖动调整此菜单位置"></a> &nbsp;
+							<input type="text" class="span4" value="菜单"> &nbsp; &nbsp;							
 							<a href="javascript:;" onclick="setMenuAction($(this).parent().parent().parent());" class="icon-edit" title="设置此菜单动作">w</a> &nbsp;
 							<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单">×</a> &nbsp;
 							<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign">+</a>
@@ -164,6 +151,22 @@
 																				</div>
 					</td>
 				</tr>
+						<?php }else{ ?>
+									<tr class="hover" data-do="forward" data-url="" data-forward="V1001_TODAY_MUSIC">
+					<td>
+						<div>
+							<input type="text" class="span4" value=""> &nbsp; &nbsp;
+							<a href="javascript:;" onclick="setMenuAction($(this).parent().parent().parent());" class="icon-edit" title="设置此菜单动作">w</a> &nbsp;
+							<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单">×</a> &nbsp;
+							<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign">+</a>
+						</div>
+						<div class="smlist ui-sortable">
+													</div>
+					</td>
+				</tr>
+						<?php } ?>
+				
+				
 									</tbody>
 		</table>
 		<div class="well well-small" style="margin-top:20px;">

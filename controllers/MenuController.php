@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use yii\web\Controller;
+use app\models\Menu;
 
 class MenuController extends Controller{
 	public $layout='nav.php';
@@ -29,8 +30,13 @@ class MenuController extends Controller{
 	   $session = \Yii::$app->session;
        $session->open();
        $id=isset($session["id"])?$session["id"]:null;
-	   
-        return  $this->render("show",array('pub_id'=>$id));
+	   $menu = Menu::find()
+		->where(['pub_id' => $id])
+		->one();
+		//echo gettype($menu['m_name']);die;
+		$menus=json_decode($menu['m_name'],true);
+		//var_dump($menus);die;
+        return  $this->render("show",array('pub_id'=>$id,'menu'=>$menus));
 	}
 	
 	/*

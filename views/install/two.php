@@ -241,8 +241,8 @@
 					<td>/</td>
 					<td>整目录可写</td>
 					<td>
-						<?php if (@file_put_contents('/a.txt','123')) {
-							unlink('/a.txt');
+						<?php if (@file_put_contents('../a.txt','123')) {
+							unlink('../a.txt');
 							 echo '<span class="glyphicon glyphicon-ok text-success"></td>';
 						 }else{
 							 echo '<span class="glyphicon glyphicon-remove text-warning"></td>';
