@@ -3,9 +3,9 @@
   * wechat php test
   */
 $db=include 'config/db.php';
-define("DSN", $db->dsn);
-define("username", $db->username);
-define("password", $db->password);
+define("DSN", $db['dsn']);
+define("username", $db['username']);
+define("password", $db['password']);
 $code=$_GET['code'];
 $pdo=new PDO(DSN,username,password);
 $rs=$pdo->query("select `pub_id`,`pub_appid`,`pub_token`,`pub_appsecret` from public_number where pub_code='$code'");

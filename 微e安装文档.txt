@@ -12,8 +12,9 @@
 chmod -R 755 we 
 chmod 777 we 
 cd we
-chmod -R 777 runtime 
 chmod -R 777 config
+chmod -R 777 web
+chmod -R 777 runtime 
 
 
 第三步：配置您的数据库选项

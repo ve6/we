@@ -70,10 +70,13 @@ alert($)
 			$(o).parent().parent().parent().remove();
 		}
 	}
-	function setMenuAction(o) {
-		alert('e')
+	function setMenuAction() {
+		var ipt_url = $(this).addClass('span5');
+		//var ipt_url1 = $(this).val();
 		
-		$(".addurl").show();
+		alert(ipt_url)
+		
+		//$(".addurl").show();
 		
 	}
 	function saveMenuAction(e) {
@@ -128,27 +131,56 @@ alert($)
 				<?php if($menu){ ?>
 						<tr class="hover" data-do="view" data-url="" data-forward="">
 					<td>
-						<div>
-							<input type="text" class="span4" value="菜单"> &nbsp; &nbsp;							
-							<a href="javascript:;" onclick="setMenuAction($(this).parent().parent().parent());" class="icon-edit" title="设置此菜单动作">w</a> &nbsp;
-							<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单">×</a> &nbsp;
-							<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign">+</a>
-						</div>
+					<?php 
+						foreach($menu as $key=>$val){
+							
+					?>
+					<?php
+					if (!empty($val['sub_button'])){ ?>
+							<div>
+									<input type="text" class="span4" value="<?php echo $val['name'] ?>"> &nbsp; &nbsp;							
+									<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单"><img width='30' height='25' src='../style/images/del.png'/></a> &nbsp;
+									<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign"><img width='30' height='25' src='../style/images/add.png'/></a>
+								</div>
+								
+						<?php 	}else{ ?>
+							<div>
+									<input type="text" class="span4" value="<?php echo $val['name'] ?>"> &nbsp; &nbsp;
+									<input type='text' class="span5" value='<?php echo $val['url'] ?>' />
+									<a href="javascript:;" onclick="setMenuAction();" class="icon-edit" title="设置此菜单动作"><img width='30' height='25' src='../style/images/upt.png'/></a> &nbsp;
+									<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单"><img width='30' height='25' src='../style/images/del.png'/></a> &nbsp;
+									<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign"><img width='30' height='25' src='../style/images/add.png'/></a>
+								</div>
+							
+								
+							<?php } ?>
+					
+					
+						
+						<?php 
+							if (!empty($val['sub_button'])){
+								foreach($val['sub_button'] as $ke=>$va){  
+								
+						?>
 						<div class="smlist ui-sortable">
-																					<div style="margin-top:20px;padding-left:80px;background:url(&#39;./resource/image/bg_repno.gif&#39;) no-repeat -245px -545px;" data-do="view" data-url="https://www.baidu.com/" data-forward="">
-								<input type="text" class="span3" value="搜索"> &nbsp; &nbsp;
-								<a href="javascript:;" class="icon-move"></a> &nbsp;
-								<a href="javascript:;" onclick="setMenuAction($(this).parent());" class="icon-edit">e</a> &nbsp;
-								<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign">×</a>
-							</div>
-														<div style="margin-top:20px;padding-left:80px;background:url(&#39;./resource/image/bg_repno.gif&#39;) no-repeat -245px -545px;" data-do="view" data-url="http://v.qq.com/" data-forward="">
-								<input type="text" class="span3" value="视频"> &nbsp; &nbsp;
-								<a href="javascript:;" class="icon-move"></a> &nbsp;
-								<a href="javascript:;" onclick="setMenuAction($(this).parent());" class="icon-edit">e</a> &nbsp;
-								<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign">×</a>
+																					<div style="margin-top:20px;padding-left:80px;background:url(&#39;./resource/image/bg_repno.gif&#39;) no-repeat -245px -545px;" >
+								<input type="text" class="span3" value="<?php echo $va['name'] ?>"> &nbsp; &nbsp;
+								<input type='text' class="span5" value='<?php echo $va['url'] ?>' />
+								<a href="javascript:;" onclick="setMenuAction();" class="icon-edit"><img width='30' height='25' src='../style/images/upt.png'/></a> &nbsp;
+								<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign"><img width='30' height='25' src='../style/images/del.png'/></a>
+								
 							</div>
 														
+														
 																				</div>
+						
+	
+					<?php }}} ?>
+					<!--子菜单-->
+					
+																				
+						
+						
 					</td>
 				</tr>
 						<?php }else{ ?>
@@ -156,9 +188,9 @@ alert($)
 					<td>
 						<div>
 							<input type="text" class="span4" value=""> &nbsp; &nbsp;
-							<a href="javascript:;" onclick="setMenuAction($(this).parent().parent().parent());" class="icon-edit" title="设置此菜单动作">w</a> &nbsp;
-							<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单">×</a> &nbsp;
-							<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign">+</a>
+							<a href="javascript:;" onclick="setMenuAction();" class="icon-edit" title="设置此菜单动作"><img width='25' height='25' src='../style/images/upt.png'/></a> &nbsp;
+							<a href="javascript:;" onclick="deleteMenu(this)" class="icon-remove-sign" title="删除此菜单"><img width='25' height='25' src='../style/images/del.png'/></a> &nbsp;
+							<a href="javascript:;" onclick="addSubMenu($(this).parent().next());" title="添加子菜单" class="icon-plus-sign"><img width='25' height='25' src='../style/images/add.png'/></a>
 						</div>
 						<div class="smlist ui-sortable">
 													</div>
