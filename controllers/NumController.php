@@ -96,7 +96,7 @@ class NumController extends Controller{
 					'acc_token'=>$access_token
 				);
 				$access->attributes=$arr;
-				if($access->save()>0){
+				if($access->save()>0){ 
 					$menus=$this->getMenu($pub->pub_id,$pub->pub_appid,$pub->pub_appsecret);
                     $menu_arr=json_decode($menus);
                     $menus=isset($menu_arr->errcode)?null:$menus;
@@ -104,6 +104,9 @@ class NumController extends Controller{
 					$menu->pub_id=$pub->pub_id;
 					$menu->m_name=$menus;
 					$menu->save();
+					/*公众号id存session*/    	
+					$session = Yii::$app->session;
+					$session->set('id',$pub->pub_id);
 					$this->redirect('index.php?r=num/edit&id='.$pub->pub_id);
 				}else{
 					echo 01;
